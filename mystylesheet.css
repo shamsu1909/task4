@@ -1,0 +1,171 @@
+/* Global Styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#eef5fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:3vw;
+}
+
+header p{
+    margin-top:10px;
+}
+h2{
+    color:#003366;
+    margin-bottom:15px;
+    border-bottom:2px solid #00509e;
+    padding-bottom:5px;
+}
+
+/* Navigation - Flexbox */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    background:#00509e;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Main Content */
+main{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+}
+
+/* Course Grid */
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.course-grid div{
+    background:#00509e;
+    color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:5px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#003366;
+    color:white;
+}
+
+/* Form */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+select,
+textarea{
+    padding:8px;
+}
+
+input[type="submit"]{
+    background:#00509e;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#003366;
+}
+
+/* Contact Section - Flexbox */
+ 
+
+.contact-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-box{
+    flex:1;
+    min-width:200px;
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:5px;
+}
+
+/* Footer */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive Design */
+@media (max-width:768px){
+
+    header h1{
+        font-size:8vw;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .course-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        flex-direction:column;
+    }
+}
